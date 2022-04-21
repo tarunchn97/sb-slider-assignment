@@ -1,0 +1,17 @@
+name: sb_theme
+type: theme
+description: A theme for drupal-9 custom pages
+base theme: classy
+package: Core
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - 'sb_theme/global-styling'
+  - 'sb_theme/bootstrap'
+  - 'sb_theme/slider'
+  - 'sb_theme/fontawesome'
+regions:
+  header: Header  
+  content: Content
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom' 

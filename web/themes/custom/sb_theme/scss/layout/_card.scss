@@ -1,0 +1,124 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.card__wrapper {
+    position: relative;
+    margin-right: 15px;
+    max-width: 355px;
+
+}
+.badge__icon {
+    position: absolute;
+    height: auto;
+    width: 100px;
+    z-index: 9999;
+    left: -28px;
+    top: -29px;
+
+}
+.price {
+    position: absolute;
+    right: 30px;
+    top: 6px;
+    color: $white;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+// card transition 
+.card__body {
+    position: relative;
+    height: 222px;
+    padding: 20px;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+    @media (max-width: 1199.98px) { 
+        height: auto;
+     }
+}
+
+.card__wrapper:hover .card__body {
+    @media (min-width: 1200px) {
+    height: 290px;
+    }
+    
+}
+
+.share__block-wrapper {
+    color: #666C74;
+    line-height: 27px;
+    opacity: 0;
+    -webkit-transform: translateY(45px);
+    transform: translateY(45px);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    @media (max-width: 1199.98px) { 
+        opacity: 1;
+        margin-top: 0;
+     }
+}
+
+.card__wrapper:hover .share__block-wrapper {
+    @media (min-width: 1200px) {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    }
+}
+
+
+.card__image-wrapper {
+    height: 200px;
+    overflow: hidden;
+    background-color: #000;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.card__image-wrapper img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.card__wrapper:hover .card__image-wrapper {
+    @media (min-width: 1200px) {
+    height: 130px;
+    }
+}
+
+.card__wrapper:hover .card__image-wrapper img {
+    @media (min-width: 1200px) {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+}
+
+.card__body {
+    span{
+        font-size: 16px;
+        color: #828A8D;
+        font-weight: bold;
+    }
+    div  {
+        i {
+            margin-right: 10px;
+        }
+    }
+}

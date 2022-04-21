@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Olivero's implementation to display a block.
+ *
+ * Available variables:
+ * - layout: String that will determine the layout of the block.
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main content
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ attach_library('sb_theme/slider') }}
+
+<section class="slider-section" id='slider_block_sb'>  
+  <div class="container">
+	  <nav>
+        <div class="nav nav-tabs d-flex mb-5" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active text-center" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+          <a class="nav-item nav-link text-center" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+          <a class="nav-item nav-link text-center" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+        </div>
+    </nav>   
+    <div class="tab-wrapper" id="nav-tabContent">
+    <div class="tab-content tabContent-sb" id="nav-tabContent-sb">
+    <div class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      
+      {{ content }}
+
+    </div>
+    <div class="slick-next"></div>
+    <div class="slick-previous"></div>
+    </div>
+    </div>
+  </div>
+</section>
+

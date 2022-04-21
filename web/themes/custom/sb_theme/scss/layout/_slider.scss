@@ -1,0 +1,119 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.slider-section {
+    margin-bottom: 100px;
+}
+
+.slider__tabs {
+    display: flex;
+    .card__body {
+        border-bottom: 2px solid $light-grey;
+        border-left: 2px solid $light-grey;
+        border-right: 2px solid $light-grey;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding: 20px 30px;
+    }
+    .card__image  {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+}
+.slider__info-wrapper {
+    justify-content: center;
+    h1,h3 {
+        @media (max-width: 991.98px)  { 
+            text-align: center;
+         }
+    }
+
+}
+.nav-tabs {
+    flex-wrap: nowrap;
+    .nav-link {
+        color: $secondary-blue;
+        border-bottom: 2px solid $blue;
+        width: 35%;
+        &:hover {
+            border-color: $white $white $blue;
+        }
+    }
+    .nav-link.active {
+        border-color: $white $white $blue;
+        color: $dark-grey;
+        position: relative;
+    }
+}
+
+
+
+
+
+
+// tooltip 
+
+
+
+
+
+.slick-previous {
+    font-family:"Font Awesome 5 Brands";
+    content: "";
+    background-image: url('/themes/custom/sb_theme/images/left.svg');
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    top: 30%;
+    left: -45px;
+    opacity: 0.4;
+
+    &:hover {
+        background-image: url('/themes/custom/sb_theme/images/blueleft.png');
+        opacity: 1;
+    }
+    
+}
+.slick-next {
+    content: "";
+    background-image: url('/themes/custom/sb_theme/images/right.svg');
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 99;
+    background-repeat: no-repeat;
+    position: absolute;    
+    right: -30px;
+    background-size: 50px;
+    top: 30%;
+    opacity: 0.4;
+    &:hover {
+        background-image: url('/themes/custom/sb_theme/images/blueright.png');
+        opacity: 1;
+    }
+}
+
+.slick-slide {
+    outline: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

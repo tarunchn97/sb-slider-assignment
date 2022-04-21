@@ -1,0 +1,49 @@
+$border-width: 10px;
+
+.nav-tabs .nav-link.active::before,
+.nav-tabs .nav-link.active::after {
+  content: "";
+  position: absolute;
+  border-left: $border-width solid transparent;
+  border-right: $border-width solid transparent;
+  top: 45px;
+  left: 50%;
+  margin-left: -$border-width;
+}
+
+.nav-tabs .nav-link.active::before {
+  border-top: $border-width solid $blue;
+  margin-top: 1px;
+}
+
+/* The white fill of the triangle */
+.nav-tabs .nav-link.active::after {
+  border-top: $border-width solid white;
+  margin-top: -2px;
+  z-index: 1;
+}
+
+
+.tab-content {
+    position: relative;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: block;     /* undo display:none          */
+  height: 0;          /* height:0 is also invisible */
+  overflow-y: hidden; 
+}
+.tab-content > .active,
+.pill-content > .active {
+  height: auto;       /* let the content decide it  */
+  overflow-y: hidden;
+} 
+
+// .slider-section{
+// .container {
+// .inactive {
+//   display: none;
+// }
+// }
+// }

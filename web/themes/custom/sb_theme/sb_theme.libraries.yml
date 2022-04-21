@@ -1,0 +1,45 @@
+global-styling:
+  css:
+    theme:
+      dist/style.css: {}
+  
+  js:
+    js/slider.js: {}
+  
+
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+
+bootstrap:
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js: {}
+    //maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js: {}
+  css:
+    component:
+      //maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css: {}
+
+
+slider:
+  css:
+    theme:
+      //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css:
+        { type: external, minified: true }
+  js:
+    //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js:
+      { type: external, minified: true }
+
+fontawesome:
+  css:
+    component:
+      //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css: {}
+
+
+sbSlider:
+  js:
+    js/slider.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - sb_theme/slider

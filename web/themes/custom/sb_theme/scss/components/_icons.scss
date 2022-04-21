@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the icon component.
+// -----------------------------------------------------------------------------
+
+// icons colour 
+
+.fa-map-marker-alt {
+    color: $orange;
+     font-size: 16px;
+    }
+    
+    .fa-tags ,.fa-calendar-alt {
+        font-size: 16px;
+        color: #CCCDD2;
+    }
+    
+    .fa-download, .fa-share-alt {
+         margin-left: 10px;
+    }
+    
+
+    .icon__rule {
+        border: 0;
+        clear:both;
+        display:block;
+        width: 1px;               
+        background-color: #D9D8DD;
+        height: 70px;
+        margin-top: -17px;
+    }
+       
+// share block 
+.share__block-wrapper {
+    margin-top: 30px;
+.share__block {
+    display: flex;
+    span {
+        color: $blue;
+        margin-right: -15px;
+    }
+   
+}
+.share_rule {
+    margin: 0 -30px ;
+}
+.fas,.far {
+    font-size: 24px;
+    color: #D9D8DD;
+    &:hover {
+      color: $blue;
+    }
+}
+}  
